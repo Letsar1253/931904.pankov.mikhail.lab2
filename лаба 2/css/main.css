@@ -1,0 +1,356 @@
+body
+{
+  padding: 0;
+  margin: 0;
+}
+header
+{
+  display:block;
+  background-color: #EAEAEA;
+  height: 60px;
+  padding-top: 5px;
+}
+
+header h2
+{
+  margin: 0;
+}
+
+footer
+{
+  text-align: center;
+  background-color: black;
+  height: 22px;
+  clear: both;
+}
+
+footer a
+{
+  color: #FDE95E;
+}
+
+.LeftColumn1, .LeftColumn2
+{
+  background-color: #C8FC98;
+  margin: 0;
+  float:left;
+}
+
+.LeftColumn1
+{
+  width: 200px;
+}
+
+.LeftColumn2
+{
+  width: 25%;
+}
+
+.LeftColumn1 span, .LeftColumn2 span
+{
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.size
+{
+  color: red;
+}
+
+.RightColumn2
+{
+  background-color: #C8FC98;
+  margin: 0;
+  float: right;
+  background-color: #FDE95E;
+  width: 200px;
+}
+
+.Content3, .Content4, .ContentBottom5
+{
+  background-color: blue;
+  color: white;
+  margin: 5px auto;
+}
+
+.Content3
+{
+  width: 640px;
+}
+
+.Content4
+{
+  max-width: 640px;
+  min-width: 400px;
+}
+
+.ContentBottom5
+{
+  width: 640px;
+  border: solid blue 10px;
+  padding: 40px;
+}
+
+.ContentTop5
+{
+  width: 640px;
+  background-color: green;
+  color: white;
+  margin: 20px auto;
+}
+
+.ContentBottom6, .ContentTop6
+{
+  background-color: white;
+  color: black;
+}
+
+.ContentBottom6
+{
+  width: 540px;
+}
+
+.StaticDiv, .RelativeDiv1, .RelativeDiv2
+{
+  width: 150px;
+  height: 100px;
+  color: white;
+  margin: 7px;
+}
+
+.StaticDiv
+{
+  position: static;
+  background-color: blueviolet;
+}
+
+.RelativeDiv1
+{
+  background-color: darkred;
+  position: relative;
+  bottom: 7px;
+}
+
+.RelativeDiv2
+{
+  background-color: peru;
+  position: relative;
+  bottom: 44px;
+  left: 30px;
+}
+
+.RelativeDiv3
+{
+  width: 600px;
+  height: 450px;
+  color: white;
+  background-color: indianred;
+  position: relative;
+  left: 7px;
+  bottom: 20px
+}
+
+.AbsoluteDiv
+{
+  color: white;
+  width: 300px;
+  height: 200px;
+  background-color: indigo;
+  position: absolute;
+  right: 0px;
+  bottom: 100px;
+}
+
+.FixedDiv
+{
+  color: white;
+  width: 100px;
+  height: 100px;
+  background-color: forestgreen;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+}
+
+.TableContent
+{
+  display: absolute;
+  top: 0px;
+  background-color: aqua;
+}
+
+.ListTable
+{
+  position: absolute;
+  background-color: bisque;
+  width: 200px;
+  display: inline-block;
+}
+
+.TextTable
+{
+  position: relative;
+  margin-left: 200px;
+  background-color: darkgray;
+}
+
+.BottomGreen
+{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: limegreen;
+}
+
+.Rat
+{
+  float: right;
+}
+
+.FloatBox
+{
+  background-color: aquamarine;
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  float: left;
+}
+
+.ClearBox
+{
+  background-color: bisque;
+  clear: both;
+  margin: 0 8px;
+}
+
+.Container
+{
+  background-color: aqua;
+  border: 1px solid forestgreen;
+  float:left;
+  width: 100%
+}
+
+.Container span
+{
+  clear: both;
+}
+
+.ListTable12
+{
+  position: static;
+  width: 25%;
+  margin-right: 5px;
+  float: left;
+  min-width: 125px;
+}
+
+.TextTable12
+{
+  position: static;
+  margin: 0 5px 0 0;
+  min-width: 375px;
+  width: calc(75% - 10px);
+  display: inline-block;
+}
+
+.TableContent12
+{
+  position: static;
+  min-width: 500px;
+  border: 1px solid forestgreen;
+}
+
+.ListTable13
+{
+  position: static;
+  width: 25%;
+  float: left;
+}
+
+.TextTable13
+{
+  position: static;
+  margin: 0;
+  width: 75%;
+  display: inline-block;
+}
+
+.TableContent13
+{
+  position: static;
+  border: 1px solid forestgreen;
+}
+
+.Rat13
+{
+  width: 50%;
+}
+
+.TextTable13 :last-child, .TextTable13 :nth-last-child(2)
+{
+  clear: both;
+  display: block;
+}
+
+.InlineBlockBox
+{
+  background-color: aquamarine;
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  display: inline-block;
+}
+
+.NotClearBox
+{
+  background-color: bisque;
+  margin: 0 8px;
+}
+
+.TableContent14
+{
+  margin: 8px;
+  min-width: auto;
+}
+
+.ListTable14
+{
+  margin: 0;
+  min-width: auto;
+}
+
+.TextTable14
+{
+  margin: 0;
+  width: 75%;
+  min-width: auto;
+}
+
+@media screen and (max-width: 500px)
+{
+  .ListTable14
+  {
+    width: 100%;
+    height: auto;
+    display: inline;
+    margin: 18px 0;
+  }
+
+  .ListTable14 li
+  {
+     list-style-type: none;
+     display: inline;
+  }
+
+  .ListTable14 ul
+  {
+    margin: 0;
+  }
+
+  .TextTable14
+  {
+    width: 100%;
+  }
+}
